@@ -14,9 +14,65 @@
 
 @implementation ViewController
 
+
+- (IBAction)zoomIn:(id)sender
+{
+    MKUserLocation *userLocation = _mapView.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 500, 500);
+    [_mapView setRegion:region animated:YES];
+}
+- (IBAction)changeMapType:(id)sender
+{
+    if (_mapView.mapType == MKMapTypeStandard){
+        _mapView.mapType = MKMapTypeSatellite;
+     }else{
+         _mapView.mapType = MKMapTypeStandard;
+     }
+}
+
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    //_mapView.centerCoordinate = userLocation.location.coordinate;
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    /*MKUserLocation *userLocation = _mapView.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 500, 500);
+    [_mapView setRegion:region animated:YES];*/
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _mapView.showsUserLocation = YES;
+    
+   /* MKUserLocation *userLocation = _mapView.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 500, 500);
+    [_mapView setRegion:region animated:YES];*/
+    
+   /* UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Gasolina Comum"
+                                                                 style:UIBarButtonItemStyleBordered
+                                                                target:self
+                                                                action:@selector(leftItemAction)];
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Novo Posto"
+                                                                  style:UIBarButtonItemStyleBordered
+                                                                 target:self
+                                                                 action:@selector(rightItemAction)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    self.navigationItem.leftBarButtonItem = leftItem;
+    */
+    
+}
+
+
+- (void)leftItemAction
+{
+    NSLog(@"left button");
+}
+
+- (void)rightItemAction
+{
+    NSLog(@"right button");
+    
 }
 
 - (void)didReceiveMemoryWarning {

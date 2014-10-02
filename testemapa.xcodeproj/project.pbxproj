@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158B17F319DDF1F000421316 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B17F219DDF1F000421316 /* MenuTableViewController.m */; };
 		15AB53F619DDE988002403ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB53F519DDE988002403ED /* main.m */; };
 		15AB53F919DDE988002403ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB53F819DDE988002403ED /* AppDelegate.m */; };
 		15AB53FC19DDE988002403ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB53FB19DDE988002403ED /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		15AB540119DDE988002403ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AB540019DDE988002403ED /* Images.xcassets */; };
 		15AB540419DDE988002403ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15AB540219DDE988002403ED /* LaunchScreen.xib */; };
 		15AB541019DDE988002403ED /* testemapaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB540F19DDE988002403ED /* testemapaTests.m */; };
+		15AB541A19DDE9C2002403ED /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AB541919DDE9C2002403ED /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		158B17F119DDF1F000421316 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		158B17F219DDF1F000421316 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		15AB53F019DDE988002403ED /* testemapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testemapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AB53F419DDE988002403ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15AB53F519DDE988002403ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		15AB540919DDE988002403ED /* testemapaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testemapaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AB540E19DDE988002403ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15AB540F19DDE988002403ED /* testemapaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testemapaTests.m; sourceTree = "<group>"; };
+		15AB541919DDE9C2002403ED /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AB541A19DDE9C2002403ED /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		15AB53E719DDE988002403ED = {
 			isa = PBXGroup;
 			children = (
+				15AB541919DDE9C2002403ED /* MapKit.framework */,
 				15AB53F219DDE988002403ED /* testemapa */,
 				15AB540C19DDE988002403ED /* testemapaTests */,
 				15AB53F119DDE988002403ED /* Products */,
@@ -81,13 +88,11 @@
 		15AB53F219DDE988002403ED /* testemapa */ = {
 			isa = PBXGroup;
 			children = (
-				15AB53F719DDE988002403ED /* AppDelegate.h */,
-				15AB53F819DDE988002403ED /* AppDelegate.m */,
 				15AB53FA19DDE988002403ED /* ViewController.h */,
 				15AB53FB19DDE988002403ED /* ViewController.m */,
 				15AB53FD19DDE988002403ED /* Main.storyboard */,
-				15AB540019DDE988002403ED /* Images.xcassets */,
-				15AB540219DDE988002403ED /* LaunchScreen.xib */,
+				158B17F119DDF1F000421316 /* MenuTableViewController.h */,
+				158B17F219DDF1F000421316 /* MenuTableViewController.m */,
 				15AB53F319DDE988002403ED /* Supporting Files */,
 			);
 			path = testemapa;
@@ -96,6 +101,10 @@
 		15AB53F319DDE988002403ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15AB53F719DDE988002403ED /* AppDelegate.h */,
+				15AB53F819DDE988002403ED /* AppDelegate.m */,
+				15AB540219DDE988002403ED /* LaunchScreen.xib */,
+				15AB540019DDE988002403ED /* Images.xcassets */,
 				15AB53F419DDE988002403ED /* Info.plist */,
 				15AB53F519DDE988002403ED /* main.m */,
 			);
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158B17F319DDF1F000421316 /* MenuTableViewController.m in Sources */,
 				15AB53FC19DDE988002403ED /* ViewController.m in Sources */,
 				15AB53F919DDE988002403ED /* AppDelegate.m in Sources */,
 				15AB53F619DDE988002403ED /* main.m in Sources */,
@@ -344,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testemapa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testemapa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +424,7 @@
 				15AB541519DDE989002403ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15AB541619DDE989002403ED /* Build configuration list for PBXNativeTarget "testemapaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				15AB541819DDE989002403ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
